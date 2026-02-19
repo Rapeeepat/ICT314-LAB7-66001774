@@ -1,0 +1,21 @@
+<h2>รายชื่อนักศึกษา</h2>
+
+<table border="1">
+<tr>
+<th>รหัส</th>
+<th>ชื่อ</th>
+<th>นามสกุล</th>
+<th>สาขา</th>
+<th>โทรศัพท์</th>
+</tr>
+
+{% for s in students %}
+<tr>
+<td>{{ s.student_id }}</td>
+<td>{{ s.first_name }}</td>
+<td>{{ s.last_name }}</td>
+<td>{{ s.major }}</td>
+<td>{{ s.phone }}</td>
+</tr>
+{% endfor %}
+</table>
